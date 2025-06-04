@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boat Watches</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    /* Custom animations if needed */
+    .fade-in-up {
+      animation: fadeInUp 1s ease-out;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md p-4 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">Boat Watches</h1>
+      <nav class="space-x-4">
+        <a href="#" class="hover:text-indigo-500 transition">Home</a>
+        <a href="#" class="hover:text-indigo-500 transition">Products</a>
+        <a href="#" class="hover:text-indigo-500 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <section class="max-w-7xl mx-auto mt-10 px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    
+    <!-- Left Column: Text & CTA -->
+    <div class="animate__animated animate__fadeInLeft">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
+        Premium Smart Watches<br><span class="text-indigo-600">for Every Style</span>
+      </h2>
+      <p class="text-lg text-gray-600 mb-6">
+        Discover our latest collection of smart watches designed to match your lifestyle. High-tech, stylish, and affordable.
+      </p>
+      <a href="#products" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-indigo-700 transition-all duration-300 animate-bounce">
+        Shop Now
+      </a>
+    </div>
+
+    <!-- Right Column: Image -->
+    <div class="flex justify-center md:justify-end animate__animated animate__fadeInRight">
+      <img src="https://i.imgur.com/QZ6bYxL.png" alt="Watch Image" class="w-80 md:w-96 rounded-xl shadow-2xl transform hover:scale-105 transition-transform duration-500" />
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-16 bg-white py-6 shadow-inner">
+    <div class="max-w-7xl mx-auto text-center text-sm text-gray-500">
+      © 2025 Boat Watches. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

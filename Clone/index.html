@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Boat Watches</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Boat Watches</div>
+    <nav class="navbar" id="navbar">
+      <a href="#">Home</a>
+      <a href="#products">Products</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+      <a href="#">Login</a>
+      <a href="#">Cart 🛒</a>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Smart Watches for Your Style</h1>
+      <p>Discover high-tech & affordable watches that fit your lifestyle.</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+    <div class="hero-image">
+      <img src="https://i.imgur.com/QZ6bYxL.png" alt="Watch Image">
+    </div>
+  </section>
+
+  <!-- Product Section -->
+  <section id="products" class="products">
+    <h2>Our Bestsellers</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://i.imgur.com/mZ9oKxC.png" alt="Watch 1">
+        <h3>Boat Watch X</h3>
+        <p>₹1999</p>        
+        <button class="btn">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="https://i.imgur.com/DvWv6Vi.png" alt="Watch 2">
+        <h3>Boat Watch Blaze</h3>
+        <p>₹2499</p>
+        <button class="btn">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="https://i.imgur.com/fiSNNdp.png" alt="Watch 3">
+        <h3>Boat Xtend</h3>
+        <p>₹2799</p>
+        <button class="btn">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="reviews">
+    <h2>What Customers Say</h2>
+    <div class="review-grid">
+      <div class="review">
+        <p>"Amazing quality! Worth the price."</p>
+        <span>– Aayush R.</span>
+      </div>
+      <div class="review">
+        <p>"Looks premium and battery backup is great."</p>
+        <span>– Sneha P.</span>
+      </div>
+      <div class="review">
+        <p>"Very stylish and comfortable to wear."</p>
+        <span>– Ritesh D.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section class="newsletter">
+    <h2>Subscribe for Offers</h2>
+    <p>Get updates on new arrivals and best discounts.</p>
+    <form>
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit" class="btn">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="footer-content">
+      <div>
+        <h3>Boat Watches</h3>
+        <p>Affordable Smart Watches for Everyone.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2025 Boat Watches. All rights reserved.</p>
+  </footer>
+
+  <!-- Script for menu toggle -->
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('navbar');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

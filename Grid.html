@@ -1,0 +1,50 @@
+<style>
+    *{
+        margin: 0;
+        padding: 0;        
+    }
+
+    .main{
+        display:grid;
+        /* grid-template-rows: 200px 200px 200px; */
+        /* grid-template-columns: 200px 200px 200px; */
+        grid-template-rows: repeat(6,100px);
+        grid-template-columns:repeat(6,100px);
+        /* grid-row-gap: 2px; */
+        /* grid-column-gap: 2px; */
+        gap: 2px;
+    }    
+    .a1{background:red;grid-column:1/10;display: flex;align-items: center; justify-content: space-between;padding: 0px 20px;}
+    .logo{border: 2px solid;}
+    .logo img{height: 50px;}
+    .search{border: 2px solid;}
+    .contact{border: 2px solid;font-size: 30px;color: wheat;text-align: center;}
+    .contact a{color: black;}
+
+    .a2{background:lightgreen;grid-column:1/3;grid-row:2/6}
+    .a3{background:tomato;grid-column:3/10;grid-row:2/6}
+    .a4{background:purple;grid-column:1/10;grid-row:6/7}    
+</style>
+
+<body>
+    <div class="main">
+        <div class="a1">
+            <div class="logo">
+                <img src="./12.gif" alt="logo">
+            </div>
+            <div class="search">
+                <input type="search" name="" id="">
+            </div>
+            <div class="contact">
+                <a href="">Contact : 985623556</a>
+                <a href="">abc@gmail.com</a>
+                <hr>
+                <a href="">Sign In</a>
+                <a href="">Sign Up</a>
+            </div>
+        </div>
+        <div class="a2">a2</div>
+        <div class="a3">a3</div>
+        <div class="a4">a4</div>        
+    </div>
+</body>
